@@ -1,0 +1,25 @@
+{
+  "name": "daquan_Resnet18_mut_zengqiang"
+  , "suffix": null
+  , "model": "force"
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "test_1": { // the 1st test dataset
+      "name": "test"
+      , "mode": "force"
+      , "color" : "RGB"
+      , "xlsroot" : "/data/qld/zhangqi/data/dabufenxishu/train85/val15.csv"
+      ,"dataroot_image": "/data/qld/zhangqi/image/dabufenxishu/imagedabufenxishuyuantu2"
+    }
+  }
+
+  , "path": {
+    "root":  "/data/qld/zhangqi/model/dabufenxishu_yuantu_Resnet18_mut_zengqiang"
+    , "pretrain_model_G": "/data/qld/zhangqi/model/*resnet_mut_real_dabufenxishu_daoxu_zengqiang/experiments/resnet_mut_real_dabufenxishu_daoxu_zengqiang/models/latest_G.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "resnet_mut"
+}
+}
